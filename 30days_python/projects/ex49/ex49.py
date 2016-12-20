@@ -69,3 +69,5 @@ class Sentence(object):
 			return parse_subject(word_list, ('noun', 'player'))
 		else:
 			raise ParserError("Must start with subject, object, or verb not: %s" % start)
+
+#print Sentence().parse_sentence('open the door and smack the bear in the 32 nose','open','the','door')
