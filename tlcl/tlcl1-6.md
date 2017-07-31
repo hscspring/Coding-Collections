@@ -1,0 +1,52 @@
+- `cd -` 先前工作目录
+- `ls`
+  - `ls -t` 长格式，按修改时间先后排序
+  - `ls -t -reverse` 相反的顺序输出
+  - `ls -F` 指示符，目录加上 '/'
+  - `ls -S` 文件大小排序
+- `file filename` 文件内容简单描述
+- `less filename` 查看文件内容，`q`退出
+  - `b` 上翻一页
+  - `space` 下翻一页
+  - `G`, `g` 最后和最开始一行
+  - `/characters`, `n` 向前查找
+- Directiories
+  - `/`
+  - `/bin` 包含系统启动和运行的二进制程序
+  - `/boot` 包含 Linux 内核，最初的 RMA 磁盘映像，和启动加载程序
+    - `/boot/grub/grub.conf or menu.lst` 配置启动加载程序
+    - `/boot/vmlinuz` Linux 内核
+  - `/dev` 设备节点
+  - `/etc` 配置文件
+    - `/etc/crontab` 定时任务
+    - `/etc/fstab` 存储设备列表和挂载点
+    - `/etc/passwd` 用户账号列表
+  - `/home`
+  - `/lib` 包含核心系统程序所需的库文件
+  - `/lost+found` 除非系统文件真正损坏了，否则是个空目录
+  - `/media` 可移除媒体设备挂载点
+  - `/mnt` 早些 Linux 中，包含可移除设备挂载点
+  - `/opt` 安装 “可选” 软件
+  - `/proc` Linux 内核维护的虚拟文件系统，告诉内核怎样监管计算机
+  - `/root`
+  - `/sbin` 系统二进制文件，完成重大系统任务的程序，通常为超级用户保留
+  - `/tmp`
+  - `/usr` 普通用户所需要的所有程序和文件
+    - `/usr/bin` 系统安装的科执行程序
+    - `/usr/lib` 包含 `/usr/bin` 目录中程序所用的共享库
+    - `/usr/local` 非系统发行版自带，通常由源码编译的程序会安装在 `usr/local/bin` 下
+    - `/usr/sbin` 包含许多系统管理程序
+    - `/usr/share` 包含由 `/usr/bin` 目录中程序使用的共享数据
+    - `/usr/share/doc` 安装在系统中软件的文档
+  - `/var` 可能需要改动的文件存储的地方，各种数据库、假脱机文件、邮件等等
+    - `/var/log` 日志文件，系统活动记录，最重要的是 `/var/log/messages`
+- `ln`
+  - `ln file link` 硬链接，每一个硬链接都关系到一个具体的包含文件内容的索引节点
+    - `ls -li` 看索引节点
+  - `ln -s item link` 符号链接， item 可以是文件或目录
+- `type`: 显示命令类型；可以查看某个命令名是否已经存在系统中。
+- `apropos`: 显示适当的命令
+  - `apropos floppy`: 等于 `man -k floppy`
+- `info`: 命令程序手册页的替代物
+- `zless`: 可以显示由 `gzip` 压缩的文本文件
+- `alias foo='cd /usr; ls; cd -'`: 转到 usr 目录，显示目录，返回当前目录；`unalias foo`: 删除别名
