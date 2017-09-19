@@ -1,1 +1,1 @@
-Code Exercise
+Code Exercise and Code Note
