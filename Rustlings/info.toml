@@ -41,6 +41,20 @@ value. We can't print out something that isn't there; try giving x a value!
 This is an error that can cause bugs that's very easy to make in any
 programming language -- thankfully the Rust compiler has caught this for us!"""
 
+[[exercises]]
+name = "variables5"
+path = "exercises/variables/variables5.rs"
+mode = "compile"
+hint = """
+In variables3 we already learned how to make an immutable variable mutable
+using a special keyword. Unfortunately this doesn't help us much in this exercise
+because we want to assign a different typed value to an existing variable. Sometimes
+you may also like to reuse existing variable names because you are just converting
+values to different types like in this exercise.
+Fortunately Rust has a powerful solution to this problem: 'Shadowing'!
+You can read more about 'Shadowing' in the book's section 'Variables and Mutability'.
+Try to solve this exercise afterwards using this technique."""
+
 # IF
 
 [[exercises]]
@@ -610,3 +624,43 @@ answers and don't understand why they work and yours doesn't.
 If you've learned from the sample solutions, I encourage you to come
 back to this exercise and try it again in a few days to reinforce
 what you've learned :)"""
+
+# TYPE CONVERSIONS
+
+[[exercises]]
+name = "using_as"
+path = "exercises/conversions/using_as.rs"
+mode = "compile"
+hint = """
+Use the `as` operator to cast one of the operands in the last line of the
+`average` function into the expected return type."""
+
+[[exercises]]
+name = "from_into"
+path = "exercises/conversions/from_into.rs"
+mode = "test"
+hint = """
+Follow the steps provided right before the `From` implementation"""
+
+[[exercises]]
+name = "try_from_into"
+path = "exercises/conversions/try_from_into.rs"
+mode = "test"
+hint = """
+Follow the steps provided right before the `From` implementation.
+You can also use the example at https://doc.rust-lang.org/std/convert/trait.TryFrom.html"""
+
+[[exercises]]
+name = "as_ref_mut"
+path = "exercises/conversions/as_ref_mut.rs"
+mode = "test"
+hint = """
+Add AsRef<str> as a trait bound to the functions."""
+
+[[exercises]]
+name = "from_str"
+path = "exercises/conversions/from_str.rs"
+mode = "test"
+hint = """
+If you've already solved try_from_into.rs, then this is almost a copy-paste.
+Otherwise, go ahead and solve try_from_into.rs first."""
