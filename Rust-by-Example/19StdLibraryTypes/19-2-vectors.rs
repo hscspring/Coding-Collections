@@ -27,7 +27,7 @@ fn main() {
     println!("Pop last element: {:?}", xs.pop());
 
     // Out of bounds indexing yields a panic
-    println!("Fourth element: {}", xs[3]);
+    // println!("Fourth element: {}", xs[3]);
     // FIXME ^ Comment out this line
 
     // `Vector`s can be easily iterated over
