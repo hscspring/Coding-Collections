@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package pseg;
+
+
+service PartOfSpeech {
+    rpc Predict (PosRequest) returns (PosResponse) {}
+}
+
+
+message PosRequest {
+    string text = 1;
+}
+
+
+message Pair {
+    string word = 1;
+    string flag = 2;
+}
+
+message PosResponse {
+    repeated Pair pairs = 1;
+}
+
+

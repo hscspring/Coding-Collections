@@ -1,0 +1,8 @@
+{
+    "insecure": true,
+    "proto": "../proto/pseg.proto",
+    "call": "pseg.PartOfSpeech.Predict",
+    "duration": "5s",
+    "timeout": "10s",
+    "format": "summary"
+}

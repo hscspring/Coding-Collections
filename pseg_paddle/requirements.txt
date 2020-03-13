@@ -1,0 +1,15 @@
+certifi==2019.11.28
+chardet==3.0.4
+decorator==4.4.2
+graphviz==0.13.2
+grpcio==1.27.2
+grpcio-tools==1.27.2
+idna==2.9
+jieba==0.42.1
+numpy==1.18.1
+objgraph==3.4.1
+paddlepaddle-tiny==1.6.1
+protobuf==3.11.3
+requests==2.23.0
+six==1.14.0
+urllib3==1.25.8
