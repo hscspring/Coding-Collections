@@ -1,2 +1,0 @@
-address = "0.0.0.0:8001"
-database = "postgresql://postgres:password@localhost:5432"

@@ -1,5 +1,0 @@
-[workspace]
-members = [
-    "lambda_1",
-    "lambda_2",
-]

@@ -5,6 +5,7 @@ spellcheck/dictionary/data/
 spellcheck/dictionary/data-*/
 model_*/
 hug*
+Rust/*
 
 # Scott
 scott_*/
